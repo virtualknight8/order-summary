@@ -1,0 +1,159 @@
+
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+    
+    
+}
+
+.scontainer{
+    margin: 30px;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.first{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.second{
+    font-size: 0.9rem;
+    text-align:center;
+    color: hsl(223, 47%, 23%);
+    font-size: 500;
+}
+
+.tcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 7px;
+    padding: 8px;
+}
+
+.item1{
+    display: flex;
+    flex-direction: column;
+    margin-left: -100px;
+    
+}
+
+.item2{
+    align-self: center;
+    text-decoration: underline;
+    color: blue;
+    font-size: 0.8rem;
+    
+}
+
+
+
+.third{
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 7px;
+}
+
+.forth{
+    font-size: 0.9rem;
+     color: hsl(223, 47%, 23%);
+}
+
+.secondlast{
+    text-align: center;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 13px;
+    padding: 14px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.last{
+    text-align: center;
+    font-size: 0.9rem;
+    color: hsl(223, 47%,60%);
+    font-weight: 700;
+}
+
+.item2, .secondlast, .last{
+    cursor: pointer;
+}
+.item2:hover{
+    text-decoration: none;
+    color: hsl(240, 100%, 70%);
+}
+
+.secondlast:hover{
+    background-color: hsl(245, 75%, 65%);
+}
+
+.last:hover{
+    color: hsl(223, 47%,20%);
+}
+
+
+
+@media screen and (max-width:375px){
+    
+    
+    .item2{
+        margin-left: auto;
+    }
+    
+    .item1{
+        margin: 05px;
+    }
+    
+    .container{
+        margin: 10px;
+    }
+    
+
+}
+
+@media screen and (max-width:300px){
+    .tcontainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .item2{
+        margin: auto;
+    }
+    
+    *{
+        font-size: 6vw;
+    }
+    
+}
